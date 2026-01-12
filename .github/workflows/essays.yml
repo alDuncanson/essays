@@ -1,0 +1,34 @@
+name: Build and Deploy Essays
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.md-press.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and deploy essays
+        id: md-press
+        uses: alDuncanson/md-press@v0.1.5
+        with:
+          sources: essays/*.md
+          mode: collection
+          index-title: Essays
+          deploy: ${{ github.ref == 'refs/heads/main' }}

@@ -3,7 +3,7 @@ geometry: margin=1in
 fontsize: 11pt
 ---
 
-# Example Essay
+# Essay Two
 
 This is a sample essay to demonstrate multi-file publishing with md-press.
 

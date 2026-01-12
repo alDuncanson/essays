@@ -1,41 +1,17 @@
-# Essays Template
+# Essays
 
-A template repository for publishing multiple Markdown essays with [md-press](https://github.com/alDuncanson/md-press).
+[![Build and Deploy Essays](https://github.com/alDuncanson/essays/actions/workflows/essays.yml/badge.svg)](https://github.com/alDuncanson/essays/actions/workflows/essays.yml)
 
-## Usage
+Published for free with [md-press](https://github.com/alDuncanson/md-press).
 
-1. Click "Use this template" to create your own repository
-2. Enable GitHub Pages: Settings → Pages → Source → **GitHub Actions**
-3. Add your essays as `.md` files in the `essays/` directory
-4. Push to `main` — your essays will be published automatically
-
-## How It Works
-
-Each Markdown file in `essays/` is converted to:
-- **HTML** — for web viewing
-- **PDF** — for download
-
-An index page with links to all essays is auto-generated at your site root.
+Use this template to create your own essay collection—each Markdown file in
+`essays/` will be published to your personal
+[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
+site at `username.github.io/essays` automatically.
 
 ## Preview
 
-Once deployed, your essays will be available at:
+![Essays Preview](https://alduncanson.github.io/essays/essays/essay-one.png)
 
-```
-https://<username>.github.io/<repository>/
-```
-
-## PDF Styling
-
-Control PDF layout with YAML frontmatter:
-
-```markdown
----
-geometry: margin=1in
-fontsize: 12pt
----
-
-# Your Essay Title
-```
-
-See the [md-press configuration docs](https://github.com/alDuncanson/md-press/blob/main/docs/configuration.md) for all options.
+[View Essays](https://alduncanson.github.io/essays/) |
+[Download PDF](https://alduncanson.github.io/essays/essays/essay-one.pdf)

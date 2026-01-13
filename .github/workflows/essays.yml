@@ -26,7 +26,7 @@ jobs:
 
       - name: Build and deploy essays
         id: md-press
-        uses: alDuncanson/md-press@v0.1.5
+        uses: alDuncanson/md-press@v0.1.6
         with:
           sources: essays/*.md
           mode: collection
